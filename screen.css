@@ -1,0 +1,14 @@
+/* screen.css */
+.screen {
+    padding: 20px;
+    text-align: right;
+    background: #222;
+    color: #f39c12; /* Números en naranja */
+    font-size: 2.5rem;
+    border-bottom: 2px solid #444;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: bold;
+}

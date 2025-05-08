@@ -1,0 +1,71 @@
+/* buttons.css */
+.calc-buttons {
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 15px;
+    background: #333; /* Fondo oscuro para la zona de botones */
+}
+
+.calc-button-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+/* Estilo base para todos los botones */
+.calc-button {
+    height: 60px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+/* Botones numéricos (naranja) */
+.calc-button:not(.calc-button-row button:last-child):not(.calc-button.double):not(.calc-button:contains('C')):not(.calc-button:contains('←')) {
+    background: #f39c12;
+    color: white;
+}
+
+/* Botones de funciones (negro) */
+.calc-button-row button:last-child,
+.calc-button.double,
+.calc-button:contains('C'),
+.calc-button:contains('←') {
+    background: #000000;
+    color: white;
+}
+
+/* Efectos hover */
+.calc-button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.calc-button:active {
+    transform: translateY(0);
+}
+
+/* Botón C (doble ancho) */
+.calc-button.double {
+    grid-column: span 2;
+    background: #000000;
+}
+
+/* Botón de flecha (retroceso) */
+.calc-button:contains('←') {
+    background: #000000;
+}
+
+/* Botones de operaciones */
+.calc-button:contains('÷'),
+.calc-button:contains('×'),
+.calc-button:contains('−'),
+.calc-button:contains('+'),
+.calc-button:contains('=') {
+    background: #000000;
+    color: white;
+}
