@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylsheet" href="style.css">
 	<title>Calculator</title>
 </head>
 <body>
@@ -14,69 +14,73 @@
 		</section>
 		<section class="calc-buttons">
 			<div class="calc-button-row">
-				<button class="calc-button double">
+				<button class="calc-button double" onclick="clean()">
 					C
 				</button>
-				<button class="calc-button">
+				<button class="calc-button" onclick="cleanLast()">
 					&larr;
 				</button>
-				<button class="calc-button">
+				<button class="calc-button" onclick="addNum('/')">
 					&divide;
 				</button>
 			</div>
 			<div class="calc-button-row">
-				<button class="calc-button">
+				<button class="calc-button" onclick="addNum(7)">
 					7
 				</button>
-				<button class="calc-button">
+				<button class="calc-button" onclick="addNum(8)">
 					8
 				</button>
-				<button class="calc-button">
+				<button class="calc-button" onclick="addNum(9)">
 					9
 				</button>
-				<button class="calc-button">
+				<button class="calc-button" onclick="addNum('*')">
 					&times;
 				</button>
 			</div>
 			<div class="calc-button-row">
-				<button class="calc-button">
+				<button class="calc-button" onclick="addNum(4)">
 					4
 				</button>
-				<button class="calc-button">
+				<button class="calc-button" onclick="addNum(5)">
 					5
 				</button>
-				<button class="calc-button">
+				<button class="calc-button" onclick="addNum(6)">
 					6
 				</button>
-				<button class="calc-button">
+				<button class="calc-button" onclick="addNum('-')">
 					&minus;
 				</button>
 			</div>
 			<div class="calc-button-row">
-				<button class="calc-button">
+				<button class="calc-button" onclick="addNum(1)">
 					1
 				</button>
-				<button class="calc-button">
+				<button class="calc-button" onclick="addNum(2)">
 					2
 				</button>
-				<button class="calc-button">
+				<button class="calc-button" onclick="addNum(3)">
 					3
 				</button>
-				<button class="calc-button">
+				<button class="calc-button" onclick="addNum('+')">
 					&plus;
 				</button>
 			</div>
 			<div class="calc-button-row">
-				<button class="calc-button">
+				<button class="calc-button" onclick="addNum(0)">
 					0
 				</button>
-				<button class="calc-button">
+				<button class="calc-button" onclick="result()">
 					&equals;
 				</button>
 			</div>
 		</section>
-
+		<div>
+			<input type="checkbox" id="round"/>
+			<label for="round">Redondear decimales</label>
+		  </div>
 	</div>
 
 </body>
+<script src="calculadora.js"></script>
 </html>
