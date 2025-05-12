@@ -1,5 +1,6 @@
 /* style.css */
-@import url('reset.css');
-@import url('layout.css');
-@import url('screen.css');
-@import url('buttons.css');
+/* Los @import no funcionan*/
+@import url("reset.css");
+@import url("layout.css");
+@import "screen.css";
+@import "buttons.css";

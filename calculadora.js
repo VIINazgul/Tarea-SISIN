@@ -38,7 +38,7 @@ function addNum(intr){
                 if(isNaN(calc[calc.length-1])){
                     calc.push(intr);
                 }else{
-                    calc[calc.length-1] += intr;
+                    calc[calc.length-1] += intr.toString();
                 }
             }
             break;
